@@ -1,0 +1,10 @@
+amazon_product_intelligence_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      role: ACCOUNTADMIN
+      warehouse: AMAZON_WH
+      database: AMAZON_PRODUCT_INTELLIGENCE
+      schema: DBT_DEV
+      threads: 4

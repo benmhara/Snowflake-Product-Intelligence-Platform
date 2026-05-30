@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: mart_business_ready_products
+    description: "Primary product intelligence mart for product, category, pricing, and opportunity analysis."
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+
+  - name: mart_category_performance
+    description: "Category-level performance summary for executive dashboards."
+
+  - name: mart_hidden_gems
+    description: "High-value products with strong ratings and lower review volume."
+
+  - name: mart_executive_dashboard
+    description: "Top-line platform KPIs for leadership reporting."
+
+  - name: mart_customer_sentiment
+    description: "Product-level sentiment summary for customer experience analysis."

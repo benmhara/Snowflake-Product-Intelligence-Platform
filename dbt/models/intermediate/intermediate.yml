@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: int_product_metrics
+    description: "Reusable product scoring calculations used by analytics marts."
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+
+  - name: int_review_metrics
+    description: "Reusable review quality metrics used by AI and customer sentiment models."
+    columns:
+      - name: review_id
+        tests:
+          - not_null

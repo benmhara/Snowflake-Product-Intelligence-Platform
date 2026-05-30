@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+
+  - name: bronze
+    database: amazon_product_intelligence
+    schema: bronze
+
+    tables:
+
+      - name: raw_amazon_products
+        description: "Raw ingested Amazon product dataset"

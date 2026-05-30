@@ -1,0 +1,14 @@
+-- =====================================================
+-- WAREHOUSE CREATION
+-- =====================================================
+
+CREATE OR REPLACE WAREHOUSE amazon_wh
+WITH
+    WAREHOUSE_SIZE = 'XSMALL'
+    AUTO_SUSPEND = 60
+    AUTO_RESUME = TRUE
+    INITIALLY_SUSPENDED = TRUE
+    SCALING_POLICY = 'STANDARD';
+
+-- Verify
+SHOW WAREHOUSES;

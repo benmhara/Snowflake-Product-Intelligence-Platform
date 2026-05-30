@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: ai_sentiment
+    description: "Review-level Cortex sentiment scoring."
+
+  - name: ai_review_embeddings
+    description: "Review embeddings used by semantic search and RAG retrieval."
+
+  - name: ai_semantic_search
+    description: "Pairwise review similarity index for semantic discovery."
+
+  - name: ai_product_insights
+    description: "AI-enriched product insight flags."
+
+  - name: ai_rag_context
+    description: "Chunked product context prepared for RAG responses."
+
+  - name: ai_recommendations
+    description: "AI-ready recommendation ranking dataset."
